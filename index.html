@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edtech layout</title>
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      .box-shadow {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar component  -->
+
+    <nav class="p-2 flex justify-around items-center box-shadow mb-12">
+      <div>
+        <h1 class="capitalize font-extrabold text-3xl">edtech</h1>
+      </div>
+      <div class="flex justify-between items-center gap-x-8">
+        <div>
+          <a
+            class="capitalize font-bold text-gray-600 hover:text-primary"
+            href="/"
+            >home</a
+          >
+        </div>
+        <div>
+          <a
+            class="capitalize font-bold text-gray-600 hover:text-primary"
+            href="/"
+            >about</a
+          >
+        </div>
+        <div>
+          <a
+            class="capitalize font-bold text-gray-600 hover:text-primary"
+            href="/"
+            >services</a
+          >
+        </div>
+        <div>
+          <a
+            class="capitalize font-bold text-gray-600 hover:text-primary"
+            href="/"
+            >portfolio</a
+          >
+        </div>
+        <div>
+          <a
+            class="capitalize font-bold text-gray-600 hover:text-primary"
+            href="/"
+            >blog</a
+          >
+        </div>
+        <div>
+          <a
+            class="capitalize font-bold text-gray-600 hover:text-primary"
+            href="/"
+            >contact us</a
+          >
+        </div>
+      </div>
+      <div class="flex justify-between items-center gap-x-6">
+        <button
+          class="p-2 px-6 bg-primary text-white rounded-lg capitalize text-base font-bold"
+        >
+          join now
+        </button>
+        <button class="p-3 border-[1px] border-primary rounded-lg">
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+              fill="#1C274C"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero component  -->
+
+    <main
+      class="w-11/12 m-auto flex justify-between items-center gap-x-32 mb-12"
+    >
+      <!-- Left container  -->
+
+      <div class="w-1/2 flex flex-col gap-y-8">
+        <!-- Social container  -->
+
+        <div class="w-1/3 flex justify-between items-center gap-x-3">
+          <!-- Facebook container  -->
+          <div class="bg-gray-400 p-[0.4rem] rounded-lg">
+            <svg
+              fill="#fff"
+              width="20px"
+              height="20px"
+              viewBox="0 0 32 32"
+              version="1.1"
+            >
+              <path
+                d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"
+              ></path>
+            </svg>
+          </div>
+          <!-- Twitter container  -->
+          <div class="bg-gray-400 p-[0.4rem] rounded-lg">
+            <svg
+              fill="#fff"
+              height="20px"
+              width="20px"
+              version="1.1"
+              viewBox="0 0 310 310"
+            >
+              <g>
+                <path
+                  d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73
+            c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783
+            c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598
+            C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467
+            c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977
+            c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889
+            c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597
+            c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961
+            c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895
+            c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367
+            c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998
+            C307.394,57.037,305.009,56.486,302.973,57.388z"
+                />
+              </g>
+            </svg>
+          </div>
+          <!-- Linkedin container  -->
+          <div class="bg-gray-400 p-[0.4rem] rounded-lg">
+            <svg
+              fill="#fff"
+              width="20px"
+              height="20px"
+              viewBox="-5.5 0 32 32"
+              version="1.1"
+            >
+              <path
+                d="M0 8.219v15.563c0 1.469 1.156 2.625 2.625 2.625h15.563c0.719 0 1.406-0.344 1.844-0.781 0.469-0.469 0.781-1.063 0.781-1.844v-15.563c0-1.469-1.156-2.625-2.625-2.625h-15.563c-0.781 0-1.375 0.313-1.844 0.781-0.438 0.438-0.781 1.125-0.781 1.844zM2.813 10.281c0-1 0.813-1.875 1.813-1.875 1.031 0 1.875 0.875 1.875 1.875 0 1.031-0.844 1.844-1.875 1.844-1 0-1.813-0.813-1.813-1.844zM7.844 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.656c0.375 0 0.375 0.438 0.375 0.719 0.75-0.75 1.719-0.938 2.719-0.938 2.438 0 4 1.156 4 3.719v6.438c0 0.219-0.188 0.406-0.375 0.406h-2.75c-0.219 0-0.375-0.219-0.375-0.406v-5.813c0-0.969-0.281-1.5-1.375-1.5-1.375 0-1.719 0.906-1.719 2.125v5.188c0 0.219-0.219 0.406-0.438 0.406h-2.719c-0.156 0-0.375-0.219-0.375-0.406zM2.875 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.719c0.25 0 0.406 0.156 0.406 0.406v9.531c0 0.219-0.188 0.406-0.406 0.406h-2.719c-0.188 0-0.375-0.219-0.375-0.406z"
+              ></path>
+            </svg>
+          </div>
+          <!-- Instagram container  -->
+          <div class="bg-gray-400 p-[0.4rem] rounded-lg">
+            <svg
+              fill="#fff"
+              height="20px"
+              width="20px"
+              version="1.1"
+              viewBox="0 0 300 300"
+            >
+              <g>
+                <path
+                  d="M38.52,0.012h222.978C282.682,0.012,300,17.336,300,38.52v222.978c0,21.178-17.318,38.49-38.502,38.49
+            H38.52c-21.184,0-38.52-17.313-38.52-38.49V38.52C0,17.336,17.336,0.012,38.52,0.012z M218.546,33.329
+            c-7.438,0-13.505,6.091-13.505,13.525v32.314c0,7.437,6.067,13.514,13.505,13.514h33.903c7.426,0,13.506-6.077,13.506-13.514
+            V46.854c0-7.434-6.08-13.525-13.506-13.525H218.546z M266.084,126.868h-26.396c2.503,8.175,3.86,16.796,3.86,25.759
+            c0,49.882-41.766,90.34-93.266,90.34c-51.487,0-93.254-40.458-93.254-90.34c0-8.963,1.37-17.584,3.861-25.759H33.35v126.732
+            c0,6.563,5.359,11.902,11.916,11.902h208.907c6.563,0,11.911-5.339,11.911-11.902V126.868z M150.283,90.978
+            c-33.26,0-60.24,26.128-60.24,58.388c0,32.227,26.98,58.375,60.24,58.375c33.278,0,60.259-26.148,60.259-58.375
+            C210.542,117.105,183.561,90.978,150.283,90.978z"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Content container  -->
+
+        <div class="flex flex-col gap-y-6">
+          <div>
+            <h2 class="capitalize font-extrabold text-5xl text-gray-700">
+              excellent IT
+            </h2>
+            <h2 class="capitalize font-extrabold text-5xl text-gray-700">
+              <span class="text-primary">solutions</span> for your
+            </h2>
+            <h2 class="capitalize font-extrabold text-5xl text-gray-700">
+              success
+            </h2>
+          </div>
+          <div class="flex flex-col gap-y-4">
+            <p class="text-justify">
+              At any rate, Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Eaque amet, quod doloribus the framework of the essence
+              represents a bond between the flexible production planning
+            </p>
+            <button
+              class="w-fit p-2 px-6 bg-primary text-white rounded-lg capitalize text-base font-bold"
+            >
+              join now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right container  -->
+
+      <div class="w-1/2">
+        <img src="./images/hero.png" alt="hero-img" />
+      </div>
+    </main>
+
+    <!-- Services component  -->
+    <section class="w-11/12 m-auto mb-20">
+      <!-- Heading container  -->
+
+      <div class="w-1/2 flex flex-col gap-y-4 mb-4">
+        <div>
+          <p class="text-primary uppercase font-bold text-lg">our services</p>
+          <h3 class="text-gray-700 text-4xl capitalize font-extrabold">
+            what we're offering?
+          </h3>
+        </div>
+        <p class="capitalize text-gray-600 text-base">
+          As a matter of fact the unification of the coherent software provides
+          a strict control over The Accomplishment of Intended Estimation
+        </p>
+      </div>
+
+      <!-- Cards container  -->
+
+      <div class="grid grid-cols-3 gap-4">
+        <div class="group bg-gray-100 p-6 py-8 flex flex-col gap-y-4">
+          <svg width="50px" height="50px" viewBox="0 -2 30 30" version="1.1">
+            <g
+              stroke-width="100"
+              fill="none"
+              fill-rule="evenodd"
+              sketch:type="MSPage"
+            >
+              <g
+                id="Icon-Set"
+                sketch:type="MSLayerGroup"
+                transform="translate(-257.000000, -726.000000)"
+                fill="#16a34a"
+              >
+                <path
+                  d="M286.717,738.531 L280.726,733.688 C280.332,733.304 279.693,733.304 279.3,733.688 C278.906,734.072 278.906,734.694 279.3,735.079 L284.491,739.276 L279.3,743.474 C278.906,743.857 278.906,744.48 279.3,744.864 C279.693,745.249 280.332,745.249 280.726,744.864 L286.717,740.021 C286.927,739.816 287.016,739.544 287.002,739.276 C287.016,739.008 286.927,738.735 286.717,738.531 L286.717,738.531 Z M264.7,743.473 L259.509,739.276 L264.7,735.079 C265.094,734.694 265.094,734.071 264.7,733.688 C264.307,733.303 263.668,733.303 263.274,733.688 L257.283,738.531 C257.073,738.735 256.984,739.008 256.998,739.276 C256.984,739.544 257.073,739.816 257.283,740.021 L263.274,744.864 C263.668,745.249 264.307,745.249 264.7,744.864 C265.094,744.48 265.094,743.857 264.7,743.473 L264.7,743.473 Z M278.96,726.123 C278.481,725.852 277.87,726.013 277.594,726.481 L265.094,750.568 C264.817,751.037 264.932,751.754 265.46,751.907 C266.105,752.094 266.55,752.018 266.826,751.549 L279.326,727.461 C279.602,726.992 279.438,726.394 278.96,726.123 L278.96,726.123 Z"
+                  id="code"
+                  sketch:type="MSShapeGroup"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <h4 class="group-hover:text-green-600 font-bold text-2xl capitalize">
+            web development
+          </h4>
+          <p
+            class="group-hover:text-green-600 text-gray-600 capitalize text-justify"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde,
+            exped ita nesciunt quibusdam quis tempore quas tenetur
+          </p>
+          <a
+            href="/"
+            class="group-hover:text-green-600 font-bold text-xl text-primary capitalize"
+            >learn more &rarr;</a
+          >
+        </div>
+        <div class="group bg-gray-100 p-6 py-8 flex flex-col gap-y-4">
+          <svg
+            fill="#16a34a"
+            width="50px"
+            height="50px"
+            viewBox="0 0 1920 1920"
+          >
+            <path
+              d="M1587.162 31.278c11.52-23.491 37.27-35.689 63.473-29.816 25.525 6.099 43.483 28.8 43.483 55.002V570.46C1822.87 596.662 1920 710.733 1920 847.053c0 136.32-97.13 250.503-225.882 276.705v513.883c0 26.202-17.958 49.016-43.483 55.002a57.279 57.279 0 0 1-12.988 1.468c-21.12 0-40.772-11.745-50.485-31.171C1379.238 1247.203 964.18 1242.347 960 1242.347H564.706v564.706h87.755c-11.859-90.127-17.506-247.003 63.473-350.683 52.405-67.087 129.657-101.082 229.948-101.082v112.941c-64.49 0-110.57 18.861-140.837 57.487-68.781 87.868-45.064 263.83-30.269 324.254 4.18 16.828.34 34.673-10.277 48.34-10.73 13.665-27.219 21.684-44.499 21.684H508.235c-31.171 0-56.47-25.186-56.47-56.47v-621.177h-56.47c-155.747 0-282.354-126.607-282.354-282.353v-56.47h-56.47C25.299 903.523 0 878.336 0 847.052c0-31.172 25.299-56.471 56.47-56.471h56.471v-56.47c0-155.634 126.607-282.354 282.353-282.354h564.593c16.941-.112 420.48-7.002 627.275-420.48Zm-5.986 218.429c-194.71 242.371-452.216 298.164-564.705 311.04v572.724c112.489 12.876 369.995 68.556 564.705 311.04ZM903.53 564.7H395.294c-93.402 0-169.412 76.01-169.412 169.411v225.883c0 93.402 76.01 169.412 169.412 169.412H903.53V564.7Zm790.589 123.444v317.93c65.618-23.379 112.94-85.497 112.94-159.021 0-73.525-47.322-135.53-112.94-158.909Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <h4 class="group-hover:text-green-600 font-bold text-2xl capitalize">
+            digital marketing
+          </h4>
+          <p
+            class="group-hover:text-green-600 text-gray-600 capitalize text-justify"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde,
+            exped ita nesciunt quibusdam quis tempore quas tenetur
+          </p>
+          <a
+            href="/"
+            class="group-hover:text-green-600 font-bold text-xl text-primary capitalize"
+            >learn more &rarr;</a
+          >
+        </div>
+        <div class="group bg-gray-100 p-6 py-8 flex flex-col gap-y-4">
+          <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+              stroke="#16a34a"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h4 class="group-hover:text-green-600 font-bold text-2xl capitalize">
+            SEO services
+          </h4>
+          <p
+            class="group-hover:text-green-600 text-gray-600 capitalize text-justify"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde,
+            exped ita nesciunt quibusdam quis tempore quas tenetur
+          </p>
+          <a
+            href="/"
+            class="group-hover:text-green-600 font-bold text-xl text-primary capitalize"
+            >learn more &rarr;</a
+          >
+        </div>
+        <div class="group bg-gray-100 p-6 py-8 flex flex-col gap-y-4">
+          <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M17.416 2.62412C17.7607 2.39435 17.8538 1.9287 17.624 1.58405C17.3943 1.23941 16.9286 1.14628 16.584 1.37604L13.6687 3.31955C13.1527 3.11343 12.5897 3.00006 12.0001 3.00006C11.4105 3.00006 10.8474 3.11345 10.3314 3.31962L7.41603 1.37604C7.07138 1.14628 6.60573 1.23941 6.37596 1.58405C6.1462 1.9287 6.23933 2.39435 6.58397 2.62412L8.9437 4.19727C8.24831 4.84109 7.75664 5.70181 7.57617 6.6719C8.01128 6.55973 8.46749 6.50006 8.93763 6.50006H15.0626C15.5328 6.50006 15.989 6.55973 16.4241 6.6719C16.2436 5.70176 15.7519 4.841 15.0564 4.19717L17.416 2.62412Z"
+              fill="#16a34a"
+            />
+            <path
+              d="M1.25 14.0001C1.25 13.5859 1.58579 13.2501 2 13.2501H5V11.9376C5 11.1019 5.26034 10.327 5.70435 9.68959L3.22141 8.69624C2.83684 8.54238 2.6498 8.10589 2.80366 7.72131C2.95752 7.33673 3.39401 7.1497 3.77859 7.30356L6.91514 8.55841C7.50624 8.20388 8.19807 8.00006 8.9375 8.00006H15.0625C15.8019 8.00006 16.4938 8.20388 17.0849 8.55841L20.2214 7.30356C20.606 7.1497 21.0425 7.33673 21.1963 7.72131C21.3502 8.10589 21.1632 8.54238 20.7786 8.69624L18.2957 9.68959C18.7397 10.327 19 11.1019 19 11.9376V13.2501H22C22.4142 13.2501 22.75 13.5859 22.75 14.0001C22.75 14.4143 22.4142 14.7501 22 14.7501H19V15.0001C19 16.1808 18.7077 17.2932 18.1915 18.2689L20.7786 19.3039C21.1632 19.4578 21.3502 19.8943 21.1963 20.2789C21.0425 20.6634 20.606 20.8505 20.2214 20.6966L17.3288 19.5394C16.1974 20.8664 14.5789 21.7655 12.75 21.9604V15.0001C12.75 14.5858 12.4142 14.2501 12 14.2501C11.5858 14.2501 11.25 14.5858 11.25 15.0001V21.9604C9.42109 21.7655 7.80265 20.8664 6.67115 19.5394L3.77859 20.6966C3.39401 20.8505 2.95752 20.6634 2.80366 20.2789C2.6498 19.8943 2.83684 19.4578 3.22141 19.3039L5.80852 18.2689C5.29231 17.2932 5 16.1808 5 15.0001V14.7501H2C1.58579 14.7501 1.25 14.4143 1.25 14.0001Z"
+              fill="#16a34a"
+            />
+          </svg>
+          <h4 class="group-hover:text-green-600 font-bold text-2xl capitalize">
+            cyber security
+          </h4>
+          <p
+            class="group-hover:text-green-600 text-gray-600 capitalize text-justify"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde,
+            exped ita nesciunt quibusdam quis tempore quas tenetur
+          </p>
+          <a
+            href="/"
+            class="group-hover:text-green-600 font-bold text-xl text-primary capitalize"
+            >learn more &rarr;</a
+          >
+        </div>
+        <div class="group bg-gray-100 p-6 py-8 flex flex-col gap-y-4">
+          <svg fill="#16a34a" width="50px" height="50px" viewBox="0 0 512 512">
+            <path
+              d="M441,336.2l-.06-.05c-9.93-9.18-22.78-11.34-32.16-12.92l-.69-.12c-9.05-1.49-10.48-2.5-14.58-6.17-2.44-2.17-5.35-5.65-5.35-9.94s2.91-7.77,5.34-9.94l30.28-26.87c25.92-22.91,40.2-53.66,40.2-86.59S449.73,119.92,423.78,97c-35.89-31.59-85-49-138.37-49C223.72,48,162,71.37,116,112.11c-43.87,38.77-68,90.71-68,146.24s24.16,107.47,68,146.23c21.75,19.24,47.49,34.18,76.52,44.42a266.17,266.17,0,0,0,86.87,15h1.81c61,0,119.09-20.57,159.39-56.4,9.7-8.56,15.15-20.83,15.34-34.56C456.14,358.87,450.56,345.09,441,336.2ZM112,208a32,32,0,1,1,32,32A32,32,0,0,1,112,208Zm40,135a32,32,0,1,1,32-32A32,32,0,0,1,152,343Zm40-199a32,32,0,1,1,32,32A32,32,0,0,1,192,144Zm64,271a48,48,0,1,1,48-48A48,48,0,0,1,256,415Zm72-239a32,32,0,1,1,32-32A32,32,0,0,1,328,176Z"
+            />
+          </svg>
+          <h4 class="group-hover:text-green-600 font-bold text-2xl capitalize">
+            graphic design
+          </h4>
+          <p
+            class="group-hover:text-green-600 text-gray-600 capitalize text-justify"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde,
+            exped ita nesciunt quibusdam quis tempore quas tenetur
+          </p>
+          <a
+            href="/"
+            class="group-hover:text-green-600 font-bold text-xl text-primary capitalize"
+            >learn more &rarr;</a
+          >
+        </div>
+        <div class="group bg-gray-100 p-6 py-8 flex flex-col gap-y-4">
+          <svg
+            fill="#16a34a"
+            version="1.1"
+            width="50px"
+            height="50px"
+            viewBox="0 0 512 512"
+            enable-background="new 0 0 512 512"
+          >
+            <g>
+              <path
+                display="inline"
+                d="M120.606,169h270.788v220.663c0,13.109-10.628,23.737-23.721,23.737h-27.123v67.203
+               c0,17.066-13.612,30.897-30.415,30.897c-16.846,0-30.438-13.831-30.438-30.897v-67.203h-47.371v67.203
+               c0,17.066-13.639,30.897-30.441,30.897c-16.799,0-30.437-13.831-30.437-30.897v-67.203h-27.099
+               c-13.096,0-23.744-10.628-23.744-23.737V169z M67.541,167.199c-16.974,0-30.723,13.963-30.723,31.2v121.937
+               c0,17.217,13.749,31.204,30.723,31.204c16.977,0,30.723-13.987,30.723-31.204V198.399
+               C98.264,181.162,84.518,167.199,67.541,167.199z M391.395,146.764H120.606c3.342-38.578,28.367-71.776,64.392-90.998
+               l-25.746-37.804c-3.472-5.098-2.162-12.054,2.946-15.525c5.102-3.471,12.044-2.151,15.533,2.943l28.061,41.232
+               c15.558-5.38,32.446-8.469,50.208-8.469c17.783,0,34.672,3.089,50.229,8.476L334.29,5.395c3.446-5.108,10.41-6.428,15.512-2.957
+               c5.108,3.471,6.418,10.427,2.946,15.525l-25.725,37.804C363.047,74.977,388.055,108.175,391.395,146.764z M213.865,94.345
+               c0-8.273-6.699-14.983-14.969-14.983c-8.291,0-14.99,6.71-14.99,14.983c0,8.269,6.721,14.976,14.99,14.976
+               S213.865,102.614,213.865,94.345z M329.992,94.345c0-8.273-6.722-14.983-14.99-14.983c-8.291,0-14.97,6.71-14.97,14.983
+               c0,8.269,6.679,14.976,14.97,14.976C323.271,109.321,329.992,102.614,329.992,94.345z M444.48,167.156
+               c-16.956,0-30.744,13.984-30.744,31.222v121.98c0,17.238,13.788,31.226,30.744,31.226c16.978,0,30.701-13.987,30.701-31.226
+               v-121.98C475.182,181.14,461.458,167.156,444.48,167.156z"
+              ></path>
+            </g>
+          </svg>
+          <h4 class="group-hover:text-green-600 font-bold text-2xl capitalize">
+            apps development
+          </h4>
+          <p
+            class="group-hover:text-green-600 text-gray-600 capitalize text-justify"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde,
+            exped ita nesciunt quibusdam quis tempore quas tenetur
+          </p>
+          <a
+            href="/"
+            class="group-hover:text-green-600 font-bold text-xl text-primary capitalize"
+            >learn more &rarr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About us component  -->
+
+    <section class="w-10/12 flex flex-col gap-y-8 m-auto mb-20">
+      <section class="flex justify-between items-center gap-x-4">
+        <!-- Heading container  -->
+
+        <div class="w-3/5 mb-4">
+          <p class="text-primary uppercase font-bold text-lg">about us</p>
+          <h3 class="text-gray-700 text-4xl capitalize font-extrabold mb-2">
+            the best IT solution since
+          </h3>
+          <h3 class="text-primary text-4xl capitalize font-extrabold mb-4">
+            2015
+          </h3>
+          <p class="capitalize text-gray-600 text-base text-justify mb-6">
+            Although, final stages of the internal network gives a complete
+            experience of The Parameter of Speculative Environment , Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Eligendi voluptas
+            quibusdam libero quos rem unde, sequi distinctio eum excepturi nobis
+            facere expedita sint nulla aliquam, odio ea laboriosam hic?
+            Consectetur ullam eveniet
+          </p>
+          <button
+            class="w-fit p-2 px-6 bg-primary text-white rounded-lg capitalize text-base font-bold"
+          >
+            join now
+          </button>
+        </div>
+
+        <div class="w-3/5">
+          <img src="./images/about-us.png" alt="about-us-illustration" />
+        </div>
+      </section>
+
+      <!-- Services component  -->
+
+      <section class="flex justify-between items-center gap-x-4">
+        <!-- Image container  -->
+        <div>
+          <img src="./images/services.png" alt="services-illustration" />
+        </div>
+        <!-- Content container  -->
+        <div>
+          <!-- Text content container  -->
+          <div>
+            <h3 class="text-gray-700 text-4xl capitalize font-extrabold mb-2">
+              we deal with the aspects
+            </h3>
+            <h3 class="text-gray-700 text-4xl capitalize font-extrabold mb-2">
+              of professional <span class="text-primary">IT</span>
+            </h3>
+            <h3 class="text-primary text-4xl capitalize font-extrabold mb-4">
+              services
+            </h3>
+            <p class="capitalize text-gray-600 text-base text-justify mb-6">
+              Although, final stages of the internal network gives a complete
+              experience of The Parameter of Speculative Environment
+            </p>
+          </div>
+          <!-- Listing container  -->
+          <div class="grid grid-cols-2 grid-rows-2 gap-2">
+            <div class="flex gap-x-4 items-center bg-gray-100 p-4 rounded-md">
+              <svg width="30px" height="30px" viewBox="0 0 16 16" fill="none">
+                <path d="M4 2L0 1V14L4 15V2Z" fill="#16a34a" />
+                <path d="M16 2L12 1V14L16 15V2Z" fill="#16a34a" />
+                <path d="M10 1L6 2V15L10 14V1Z" fill="#16a34a" />
+              </svg>
+              <h4 class="font-bold text-lg capitalize">worldwide services</h4>
+            </div>
+            <div class="flex gap-x-4 items-center bg-gray-100 p-4 rounded-md">
+              <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M2 12.124C2 6.53269 6.47713 2 11.9999 2C17.5228 2 21.9999 6.53269 21.9999 12.124L21.9999 17.3675C22.0002 18.1844 22.0004 18.7446 21.8568 19.2364C21.576 20.1982 20.9046 20.9937 20.01 21.4245C19.5525 21.6449 19.0059 21.732 18.2088 21.8591L18.0789 21.8799C17.7954 21.9252 17.5532 21.9639 17.3522 21.9839C17.1431 22.0047 16.9299 22.0111 16.7118 21.9676C15.9942 21.8245 15.4024 21.3126 15.1508 20.6172C15.0744 20.4059 15.0474 20.1916 15.035 19.9793C15.0232 19.7753 15.0232 19.527 15.0232 19.2365L15.0231 15.0641C15.0226 14.6386 15.0222 14.2725 15.1195 13.959C15.3422 13.2416 15.9238 12.6975 16.6477 12.5292C16.9641 12.4556 17.3246 12.4849 17.7435 12.5189L17.8367 12.5264L17.9465 12.5352C18.7302 12.5975 19.2664 12.6402 19.7216 12.8106C20.0415 12.9304 20.3381 13.0953 20.6046 13.2976V12.124C20.6046 7.31288 16.7521 3.41266 11.9999 3.41266C7.24776 3.41266 3.39534 7.31288 3.39534 12.124V13.2976C3.66176 13.0953 3.95843 12.9304 4.27829 12.8106C4.73345 12.6402 5.26965 12.5975 6.05335 12.5352L6.16318 12.5264L6.25641 12.5189C6.67534 12.4849 7.03581 12.4556 7.35224 12.5292C8.07612 12.6975 8.65766 13.2416 8.88039 13.959C8.97774 14.2725 8.9773 14.6386 8.97678 15.0641L8.97671 19.2365C8.97671 19.527 8.97672 19.7753 8.96487 19.9793C8.95254 20.1916 8.9255 20.4059 8.84906 20.6172C8.59754 21.3126 8.00574 21.8245 7.28812 21.9676C7.07001 22.0111 6.85675 22.0047 6.64768 21.9839C6.44671 21.9639 6.20449 21.9252 5.92102 21.8799L5.79106 21.8591C4.99399 21.732 4.44737 21.6449 3.98991 21.4245C3.09534 20.9937 2.42388 20.1982 2.14308 19.2364C2.02467 18.8309 2.00404 18.3788 2.0006 17.7747L2 17.5803V12.124Z"
+                  fill="#16a34a"
+                />
+              </svg>
+              <h4 class="font-bold text-lg capitalize">Support 24h/24h</h4>
+            </div>
+            <div class="flex gap-x-4 items-center bg-gray-100 p-4 rounded-md">
+              <svg width="30px" height="30px" viewBox="0 0 512 512">
+                <path
+                  fill="#16a34a"
+                  d="M380.95 114.46c-62.946-13.147-63.32 32.04-124.868 32.04-53.25 0-55.247-44.675-124.87-32.04C17.207 135.072-.32 385.9 60.16 399.045c33.578 7.295 50.495-31.644 94.89-59.593a51.562 51.562 0 0 0 79.77-25.78 243.665 243.665 0 0 1 21.24-.91c7.466 0 14.44.32 21.126.898a51.573 51.573 0 0 0 79.82 25.717c44.45 27.95 61.367 66.93 94.955 59.626 60.47-13.104 42.496-260.845-71.01-284.543zM147.47 242.703h-26.144V216.12H94.73v-26.143h26.594v-26.593h26.144v26.582h26.582v26.144h-26.582v26.582zm38.223 89.615a34.336 34.336 0 1 1 34.337-34.336 34.336 34.336 0 0 1-34.325 34.346zm140.602 0a34.336 34.336 0 1 1 34.367-34.325 34.336 34.336 0 0 1-34.368 34.335zM349.98 220.36A17.323 17.323 0 1 1 367.3 203.04a17.323 17.323 0 0 1-17.323 17.323zm37.518 37.52a17.323 17.323 0 1 1 17.322-17.324 17.323 17.323 0 0 1-17.365 17.334zm0-75.048a17.323 17.323 0 1 1 17.322-17.323 17.323 17.323 0 0 1-17.365 17.333zm37.518 37.518a17.323 17.323 0 1 1 17.323-17.323 17.323 17.323 0 0 1-17.367 17.334z"
+                />
+              </svg>
+              <h4 class="font-bold text-lg capitalize">easy to reach</h4>
+            </div>
+            <div class="flex gap-x-4 items-center bg-gray-100 p-4 rounded-md">
+              <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9.15316 5.40838C10.4198 3.13613 11.0531 2 12 2C12.9469 2 13.5802 3.13612 14.8468 5.40837L15.1745 5.99623C15.5345 6.64193 15.7144 6.96479 15.9951 7.17781C16.2757 7.39083 16.6251 7.4699 17.3241 7.62805L17.9605 7.77203C20.4201 8.32856 21.65 8.60682 21.9426 9.54773C22.2352 10.4886 21.3968 11.4691 19.7199 13.4299L19.2861 13.9372C18.8096 14.4944 18.5713 14.773 18.4641 15.1177C18.357 15.4624 18.393 15.8341 18.465 16.5776L18.5306 17.2544C18.7841 19.8706 18.9109 21.1787 18.1449 21.7602C17.3788 22.3417 16.2273 21.8115 13.9243 20.7512L13.3285 20.4768C12.6741 20.1755 12.3469 20.0248 12 20.0248C11.6531 20.0248 11.3259 20.1755 10.6715 20.4768L10.0757 20.7512C7.77268 21.8115 6.62118 22.3417 5.85515 21.7602C5.08912 21.1787 5.21588 19.8706 5.4694 17.2544L5.53498 16.5776C5.60703 15.8341 5.64305 15.4624 5.53586 15.1177C5.42868 14.773 5.19043 14.4944 4.71392 13.9372L4.2801 13.4299C2.60325 11.4691 1.76482 10.4886 2.05742 9.54773C2.35002 8.60682 3.57986 8.32856 6.03954 7.77203L6.67589 7.62805C7.37485 7.4699 7.72433 7.39083 8.00494 7.17781C8.28555 6.96479 8.46553 6.64194 8.82547 5.99623L9.15316 5.40838Z"
+                  fill="#16a34a"
+                />
+              </svg>
+              <h4 class="font-bold text-lg capitalize">first on field</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience component -->
+      <section class="flex justify-between items-center gap-x-4">
+        <!-- Heading container  -->
+
+        <div class="w-3/5 mb-4 flex flex-col gap-y-6">
+          <!-- Text content container  -->
+          <div>
+            <p class="text-primary uppercase font-bold text-lg">about us</p>
+            <h3 class="text-gray-700 text-4xl capitalize font-extrabold mb-2">
+              we are here to IT solution
+            </h3>
+            <h3 class="text-gray-700 text-4xl capitalize font-extrabold mb-2">
+              with 20 years of
+            </h3>
+            <h3 class="text-primary text-4xl capitalize font-extrabold mb-4">
+              experience
+            </h3>
+            <p class="capitalize text-gray-600 text-base text-justify mb-6">
+              Although, final stages of the internal network gives a complete
+              experience of The Parameter of Speculative Environment
+            </p>
+          </div>
+          <!-- Sliders container  -->
+
+          <div class="flex flex-col gap-y-6">
+            <!-- First child  -->
+            <div class="w-full flex flex-col gap-y-2">
+              <!-- Heading container  -->
+              <div class="flex justify-between items-center">
+                <p class="capitalize font-medium text-xl text-gray-700">
+                  app development
+                </p>
+                <p class="capitalize font-medium text-xl text-gray-700">70%</p>
+              </div>
+              <!-- Progress bar container  -->
+              <div class="bg-gray-100 h-2 rounded-l-full rounded-r-full">
+                <div
+                  class="w-[70%] h-2 bg-primary rounded-l-full rounded-r-full"
+                ></div>
+              </div>
+            </div>
+            <!-- Second child  -->
+            <div class="w-full flex flex-col gap-y-2">
+              <!-- Heading container  -->
+              <div class="flex justify-between items-center">
+                <p class="capitalize font-medium text-xl text-gray-700">
+                  UI/UX design
+                </p>
+                <p class="capitalize font-medium text-xl text-gray-700">20%</p>
+              </div>
+              <!-- Progress bar container  -->
+              <div class="bg-gray-100 h-2 rounded-l-full rounded-r-full">
+                <div
+                  class="w-[20%] h-2 bg-primary rounded-l-full rounded-r-full"
+                ></div>
+              </div>
+            </div>
+            <!-- Third child  -->
+            <div class="w-full flex flex-col gap-y-2">
+              <!-- Heading container  -->
+              <div class="flex justify-between items-center">
+                <p class="capitalize font-medium text-xl text-gray-700">
+                  web development
+                </p>
+                <p class="capitalize font-medium text-xl text-gray-700">55%</p>
+              </div>
+              <!-- Progress bar container  -->
+              <div class="bg-gray-100 h-2 rounded-l-full rounded-r-full">
+                <div
+                  class="w-[55%] h-2 bg-primary rounded-l-full rounded-r-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-3/5">
+          <img src="./images/experience.png" alt="about-us-illustration" />
+        </div>
+      </section>
+    </section>
+
+    <!-- Banner component  -->
+
+    <div
+      class="w-full bg-gray-900 text-white flex justify-around items-center p-8 mb-28"
+    >
+      <div class="text-center flex flex-col gap-y-2">
+        <p class="text-4xl text-primary font-bold">127</p>
+        <p class="capitalize font-bold text-2xl">happy clients</p>
+      </div>
+      <div class="text-center flex flex-col gap-y-2">
+        <p class="text-4xl text-primary font-bold">200</p>
+        <p class="capitalize font-bold text-2xl">hard workers</p>
+      </div>
+      <div class="text-center flex flex-col gap-y-2">
+        <p class="text-4xl text-primary font-bold">55</p>
+        <p class="capitalize font-bold text-2xl">projects completed</p>
+      </div>
+      <div class="text-center flex flex-col gap-y-2">
+        <p class="text-4xl text-primary font-bold">8</p>
+        <p class="capitalize font-bold text-2xl">years of experience</p>
+      </div>
+    </div>
+
+    <!-- Why us component  -->
+    <section class="w-11/12 m-auto mb-20">
+      <!-- Heading container  -->
+
+      <div class="w-1/2 flex flex-col gap-y-4 mb-4">
+        <div>
+          <p class="text-primary uppercase font-bold text-lg">why choose us</p>
+          <h3 class="text-gray-700 text-4xl capitalize font-extrabold">
+            why our clients choose us
+          </h3>
+        </div>
+        <p class="capitalize text-gray-600 text-base">
+          As a matter of fact the unification of the coherent software provides
+          a strict control over The Accomplishment of Intended Estimation
+        </p>
+      </div>
+
+      <!-- Cards container  -->
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-gray-100 p-6 py-12 flex flex-col gap-y-4 rounded-md">
+          <h5 class="text-5xl font-bold text-primary">01.</h5>
+          <h4 class="font-bold text-2xl capitalize">latest technologies</h4>
+          <p class="text-gray-600 capitalize text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde,
+            exped ita nesciunt quibusdam quis tempore quas tenetur
+          </p>
+        </div>
+        <div class="bg-gray-100 p-6 py-12 flex flex-col gap-y-4 rounded-md">
+          <h5 class="text-5xl font-bold text-primary">02.</h5>
+          <h4 class="font-bold text-2xl capitalize">unique solutions</h4>
+          <p class="text-gray-600 capitalize text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde,
+            exped ita nesciunt quibusdam quis tempore quas tenetur
+          </p>
+        </div>
+        <div class="bg-gray-100 p-6 py-12 flex flex-col gap-y-4 rounded-md">
+          <h5 class="text-5xl font-bold text-primary">03.</h5>
+          <h4 class="font-bold text-2xl capitalize">powerful strategies</h4>
+          <p class="text-gray-600 capitalize text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde,
+            exped ita nesciunt quibusdam quis tempore quas tenetur
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs component  -->
+    <section class="w-11/12 m-auto mb-20">
+      <!-- Heading container  -->
+
+      <div class="w-1/2 flex flex-col gap-y-4 mb-4">
+        <div>
+          <p class="text-primary uppercase font-bold text-lg">blog</p>
+          <h3 class="text-gray-700 text-4xl capitalize font-extrabold">
+            our blog
+          </h3>
+        </div>
+        <p class="capitalize text-gray-600 text-base">
+          As a matter of fact the unification of the coherent software provides
+          a strict control over The Accomplishment of Intended Estimation
+        </p>
+      </div>
+
+      <!-- Cards container  -->
+      <div class="grid grid-cols-3 gap-4">
+        <div class="flex flex-col gap-y-4 bg-gray-100 rounded-md">
+          <img
+            class="rounded-md"
+            src="./images/blog-one.jpg"
+            alt="blog-poster"
+          />
+          <div class="px-4 pb-8 flex flex-col gap-y-4">
+            <h5 class="text-2xl font-bold capitalize">
+              how to learn javascript easily with this method
+            </h5>
+            <p class="text-gray-600 capitalize text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              unde, exped ita nesciunt quibusdam quis tempore quas tenetur
+            </p>
+            <a href="/" class="font-bold text-xl text-primary capitalize"
+              >read more &rarr;</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-4 bg-gray-100 rounded-md">
+          <img
+            class="rounded-md"
+            src="./images/blog-two.jpg"
+            alt="blog-poster"
+          />
+          <div class="px-4 pb-8 flex flex-col gap-y-4">
+            <h5 class="text-2xl font-bold capitalize">
+              why you should learn this new javascript framework
+            </h5>
+            <p class="text-gray-600 capitalize text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              unde, exped ita nesciunt quibusdam quis tempore quas tenetur
+            </p>
+            <a href="/" class="font-bold text-xl text-primary capitalize"
+              >read more &rarr;</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-4 bg-gray-100 rounded-md">
+          <img
+            class="rounded-md"
+            src="./images/blog-three.jpg"
+            alt="blog-poster"
+          />
+          <div class="px-4 pb-8 flex flex-col gap-y-4">
+            <h5 class="text-2xl font-bold capitalize">
+              what is digital marketing and why it is important?
+            </h5>
+            <p class="text-gray-600 capitalize text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              unde, exped ita nesciunt quibusdam quis tempore quas tenetur
+            </p>
+            <a href="/" class="font-bold text-xl text-primary capitalize"
+              >read more &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
